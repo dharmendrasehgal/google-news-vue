@@ -11,29 +11,27 @@ export default new Vuex.Store({
     techNews: [],
     articles: []
   },
-  getters: {
-
-  },
+  getters: {},
   mutations: {
     SET_NEWS(state, news) {
-        state.news = news;
+      state.news = news;
     },
     SET_TECH_NEWS(state, news) {
-        state.techNews = news;
+      state.techNews = news;
     },
     SET_ARTICLES(state, articles) {
-        state.articles = articles;
+      state.articles = articles;
     }
   },
   actions: {
     loadNews() {
-        API("in",null,"SET_NEWS");
+      API("in", null, "SET_NEWS");
     },
     loadTechNews() {
-        API("in", "technology", "SET_TECH_NEWS");
+      API("in", "technology", "SET_TECH_NEWS");
     },
     loadArticles() {
-        API("us", null, "SET_ARTICLES");
+      API("us", null, "SET_ARTICLES");
     }
   },
   modules: {}

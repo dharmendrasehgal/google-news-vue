@@ -12,7 +12,7 @@ new Vue({
   render: h => h(App),
   computed: {
     news() {
-        return store.state.news;
+      return store.state.news;
     }
   }
 }).$mount("#app");
